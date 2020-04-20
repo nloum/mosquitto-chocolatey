@@ -24,6 +24,4 @@ jobs:
     - name: Push Chocolatey package
       uses: crazy-max/ghaction-chocolatey@v1.1.0
       with:
-        args: push /wksp/mosquitto.1.6.9.nupkg -k 
-      env:
-        CHOCOLATEY_KEY: ${{ secrets.ChocolateyKey }}
+        args: push /wksp/mosquitto.1.6.9.nupkg -k "${{ secrets.ChocolateyKey }}"
