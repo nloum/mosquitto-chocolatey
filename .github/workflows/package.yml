@@ -1,0 +1,29 @@
+name: Chocolatey Package
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Download the Mosquitto installer
+      run: wget -O tools/mosquitto-1.6.9-install-windows-x64.exe https://mosquitto.org/files/binary/win64/mosquitto-1.6.9-install-windows-x64.exe
+
+    - name: Create Chocolatey package
+      uses: crazy-max/ghaction-chocolatey@v1.1.0
+      with:
+        args: pack
+
+    - name: Push Chocolatey package
+      uses: crazy-max/ghaction-chocolatey@v1.1.0
+      with:
+        args: push mosquitto.1.6.9.npukg -k 
+      env:
+        CHOCOLATEY_KEY: ${{ secrets.ChocolateyKey }}
