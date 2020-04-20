@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mosquitto</id>
+    <version>1.6.9</version>
+    <packageSourceUrl>https://github.com/nloum/mosquitto-chocolatey</packageSourceUrl>
+    <owners>nloum</owners>
+
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+
+    <title>mosquitto (Install)</title>
+    <authors>Eclipse Foundation</authors>
+    <projectUrl>https://mosquitto.org/</projectUrl>
+    <iconUrl>https://mosquitto.org/images/mosquitto-text-side-28.png</iconUrl>
+    <copyright>Copyright (c) 2007, Eclipse Foundation, Inc. and its licensors</copyright>
+    <licenseUrl>https://github.com/eclipse/mosquitto/blob/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/eclipse/mosquitto</projectSourceUrl>
+    <docsUrl>https://mosquitto.org/man/mosquitto-8.html</docsUrl>
+    <mailingListUrl>https://accounts.eclipse.org/mailing-list/mosquitto-dev</mailingListUrl>
+    <bugTrackerUrl>https://github.com/eclipse/mosquitto/issues</bugTrackerUrl>
+    <tags>mosquitto mqtt</tags>
+    <summary>An MQTT broker</summary>
+    <description>Eclipse Mosquitto is an open source (EPL/EDL licensed) message broker that implements the MQTT protocol versions 5.0, 3.1.1 and 3.1. Mosquitto is lightweight and is suitable for use on all devices from low power single board computers to full servers.
+
+The MQTT protocol provides a lightweight method of carrying out messaging using a publish/subscribe model. This makes it suitable for Internet of Things messaging such as with low power sensors or mobile devices such as phones, embedded computers or microcontrollers.
+
+The Mosquitto project also provides a C library for implementing MQTT clients, and the very popular mosquitto_pub and mosquitto_sub command line MQTT clients.
+
+Mosquitto is part of the Eclipse Foundation, is an iot.eclipse.org project and is sponsored by cedalo.com.</description>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <!-- <file src="tools\**" target="tools" /> -->
+    <file src="tools/**" target="tools" />
+  </files>
+</package>
