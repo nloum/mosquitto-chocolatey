@@ -14,7 +14,7 @@
     <title>mosquitto (Install)</title>
     <authors>Eclipse Foundation</authors>
     <projectUrl>https://mosquitto.org/</projectUrl>
-    <iconUrl>https://mosquitto.org/images/mosquitto-text-side-28.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/nloum/mosquitto-chocolatey/master/mosquitto-colour.png</iconUrl>
     <copyright>Copyright (c) 2007, Eclipse Foundation, Inc. and its licensors</copyright>
     <licenseUrl>https://github.com/eclipse/mosquitto/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -34,8 +34,6 @@ Mosquitto is part of the Eclipse Foundation, is an iot.eclipse.org project and i
     <releaseNotes>https://mosquitto.org/ChangeLog.txt</releaseNotes>
   </metadata>
   <files>
-    <!-- this section controls what actually gets packaged into the Chocolatey package -->
-    <!-- <file src="tools\**" target="tools" /> -->
     <file src="tools/**" target="tools" />
   </files>
 </package>
