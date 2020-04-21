@@ -31,6 +31,7 @@ The MQTT protocol provides a lightweight method of carrying out messaging using 
 The Mosquitto project also provides a C library for implementing MQTT clients, and the very popular mosquitto_pub and mosquitto_sub command line MQTT clients.
 
 Mosquitto is part of the Eclipse Foundation, is an iot.eclipse.org project and is sponsored by cedalo.com.</description>
+    <releaseNotes>https://mosquitto.org/ChangeLog.txt</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
